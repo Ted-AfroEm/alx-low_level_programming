@@ -4,7 +4,8 @@
  * main - alphabet game
  *
  * Description: prints all lower case letters
- * staarting from a-z using putchar()
+ * staarting from a-z using putchar() except
+ * e and q
  *
  * Return: 0
  */
