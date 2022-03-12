@@ -11,22 +11,31 @@
 int main(void)
 {
 	int i = 0;
-	int num1, num2;
+	int digit1, digit2;
 
-	num1 = 0;
-	num2 = 0;
+	digit1 = 0;
+	digit2 = 0;
 
 	while (i < 100)
 	{
-		putchar((num1 % 10) + '0');
-		putchar((num2 % 10) + '0');
-		i++;
-		num1++;
-		num2++;
-		if (i == 100)
+		while(digit1 < 10)
+		{
+		if(digit1 != digit2 && digit2 > digit1)
+		{
+			putchar((digit2 % 10) + '0');
+			putchar((digit1 % 10) + '0');
+			if (i == 100)
 			break;
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
+		}
+		i++;
+		digit1++;
+		}
+		if(digit2 == 10)
+			digit2 = 0;
+		digit1 = 0;
+		digit2++;
 	}
 
 	putchar('\n');
