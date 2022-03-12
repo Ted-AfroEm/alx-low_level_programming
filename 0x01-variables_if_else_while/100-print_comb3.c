@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print two digit numbers ,
+ * main - print 1 - 9 by separated by ,
  *
  * Description: prints 1-9 using putchar()
  *
@@ -10,32 +10,33 @@
 
 int main(void)
 {
-	int i = 0;
-	int digit1, digit2;
+	int d2, d1;
+	d2 = 0;
+	d1 = 0;
 
-	digit1 = 0;
-	digit2 = 0;
-
-	while (i < 100)
+	while (d2 < 10)
 	{
-		while(digit1 < 10)
+		while(d1 < 10)
 		{
-		if(digit1 != digit2 && digit2 > digit1)
-		{
-			putchar((digit2 % 10) + '0');
-			putchar((digit1 % 10) + '0');
-			if (i == 100)
-			break;
-			putchar(',');
-			putchar(' ');
+			if(d1 == d2){
+				d1++;
+			}
+			else if((d2 * 10 + d1) > (d1 * 10 + d2))
+			{
+				d1++;
+			}
+			else {
+				putchar((d2 % 10) + '0');
+				putchar((d1 % 10) + '0');
+				if(d2 == 8 && d1 == 9)
+					break;
+				putchar(',');
+				putchar(' ');
+				d1++;
+			}
 		}
-		i++;
-		digit1++;
-		}
-		if(digit2 == 10)
-			digit2 = 0;
-		digit1 = 0;
-		digit2++;
+		d2++;
+		d1 = 0;
 	}
 
 	putchar('\n');
