@@ -4,7 +4,7 @@
  * rev_sting - reverses a sting
  * @s: pointer to string
  *
- * Description: This functions reverses given string using pointer
+ * Description:This functions reverses given string using pointer
  *
  * Return: nothing
  */
@@ -28,6 +28,8 @@ void rev_string(char *s)
 			swapl = *s;
 			*p = swapl;
 			*s = swapf;
+			if (p + 1 == s)
+				break;
 			p++;
 			s--;
 		}
