@@ -10,15 +10,15 @@ void print_rev(char *s)
 {
 	char *p;
 
-	p = s - 1;
+	p = s;
 	while (*s != '\0')
 	{
 		s++;
 	}
-	while (s != p)
+	while (s != (p - 1))
 	{
-		s--;
 		_putchar(*s);
+		s--;
 	}
 	_putchar('\n');
 }
