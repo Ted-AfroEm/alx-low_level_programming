@@ -14,7 +14,7 @@ void puts_half(char *str)
 	strlen = 0;
 	n = 0;
 	p = str;
-	while(*str != '\0')
+	while (*str != '\0')
 	{
 		strlen++;
 		str++;
@@ -29,7 +29,7 @@ void puts_half(char *str)
 	}
 	str = p;
 	str = str + n;
-	while(*str != '\0')
+	while (*str != '\0')
 	{
 		_putchar(*str);
 		str++;
