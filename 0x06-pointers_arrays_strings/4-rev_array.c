@@ -21,7 +21,7 @@ void reverse_array(int *a, int n)
 		swap2 = a[n - i];
 		a[i] = swap2;
 		a[n - i] = swap1;
-		if (i == j || i == j + 1)
+		if (i == j || i == j - 1)
 			break;
 		i++;
 		j--;
