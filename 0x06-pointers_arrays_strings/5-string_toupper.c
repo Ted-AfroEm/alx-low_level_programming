@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * string_toupper(char *s) - changes all lowercase letters of a string
  * to uppercase
@@ -26,6 +26,7 @@ char *string_toupper(char *s)
 			if(*s == lower[i])
 			{
 			       	lower[i] = upper[i];
+				printf("found %c", lower[i]);
 			       	break;
 			}
 			i++;
