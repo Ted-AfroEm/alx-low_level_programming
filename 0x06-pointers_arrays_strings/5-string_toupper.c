@@ -28,6 +28,7 @@ char *string_toupper(char *s)
 			       	lower[i] = upper[i];
 			       	break;
 			}
+			i++;
 		}
 		i = 0;
 		s++;
