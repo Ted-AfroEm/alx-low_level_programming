@@ -20,7 +20,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest++;
 		src++;
 		i++;
-		if (*src == '\0')
+		if ((*src + 1) == '\0')
 			break;
 	}
 	dest = p;
