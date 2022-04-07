@@ -21,7 +21,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	printf("here");
 	str1len = stringlen(s1);
 	str2len = stringlen(s2);
 
