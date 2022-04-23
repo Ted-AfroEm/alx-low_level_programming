@@ -18,8 +18,10 @@ void jack_bauer(void)
 	minDig1 = 0;
 	while (minDig1 <= 2)
 	{
-		while (minDig0 <= 3)
+		while (minDig0 <= 9)
 		{
+			if((minDig1 == 2) && (minDig0 > 3))
+				break;
 			while (secDig1 <= 5)
 			{
 				while (secDig0 <= 9)
