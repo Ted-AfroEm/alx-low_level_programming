@@ -33,6 +33,12 @@ void times_table(void)
 	}
 }
 
+/**
+ * printNum - print number using _putchar
+ * @n: integer
+ *
+ * Return: nothing
+ */
 void printNum(int n)
 {
        	if (n / 10){
