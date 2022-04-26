@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * size_t print_listint(const listint_t *h)
+ * print_listint - print nodes
  * @h: pointer head
  *
  * Return: number of nodes
@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 
 	while (h != NULL)
 	{
-		printf("%i\n",h->n);
+		printf("%i\n", h->n);
 		h = h->next;
 		i++;
 	}
